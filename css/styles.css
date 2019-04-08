@@ -1,0 +1,87 @@
+.body {
+    background-color:#000b25;
+}
+
+#seconds {
+    color: #0da75f;
+    font-size: 26px;
+}
+
+#yourbet {
+    color: #000;
+}
+
+/* Content */
+#sorteado, #win {
+    font-size: 22px;
+}
+
+#win {
+    color: #0da75f;
+}
+
+.inicio {
+    width: 0%;
+}
+
+.final {
+    width: 100%;
+}
+
+.animacion {
+    transition: all 8s;
+}
+
+.sounds {
+    display: none;
+}
+
+ /* Your bet */
+ #ap1, #ap2, #ap3, #ap4 {
+    font-size: 20px;
+}
+
+@media (max-width: 750px) {
+
+    #seconds {
+        font-size: 18px;
+    }
+
+    #list {
+        font-size: 12px;
+        padding-bottom: 15px;
+    }
+
+    #roulette {
+        width: 100%;
+        text-align:center;
+    }
+
+    #canvas {
+        width: 270px;
+    }
+
+    #btng {
+        padding: 0;
+        margin: auto;
+        display: block;
+    }
+
+    #try, #sorteado, #numberwin, #win {
+        display: inline;
+    }
+
+    /* Content */
+    #sorteado, #win {
+        font-size: 16px;
+    }
+
+    #content {
+        padding-bottom: 10px;
+    }
+
+    #ap1, #ap2, #ap3, #ap4 {
+        font-size: 16px;
+    }
+
+}

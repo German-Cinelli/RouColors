@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.min.css">
+    <link rel=icon type=image/png href=img/rou.png>
+    <title>RouColors</title>
+</head>
+<body class="body">
+
+<!-- Sounds -->
+    <!-- ready -->
+    <audio id="ready" class="sounds" controls>
+      <source type="audio/wav" src="sound/ready.wav">
+      </audio>
+    <!-- spin -->
+    <audio id="spin" class="sounds" controls>
+      <source type="audio/wav" src="sound/spin.wav">
+    </audio>
+    <!-- win -->
+    <audio id="winner" class="sounds" controls>
+      <source type="audio/wav" src="sound/win.wav">
+    </audio>
+    <!-- lose -->
+    <audio id="loser" class="sounds" controls>
+      <source type="audio/wav" src="sound/lose.wav">
+    </audio>
+    <!-- /Sounds -->
+
+    <div id="divsaldo" class="text-center mt-1 col-md-15">
+
+    </div><!-- /divsaldo -->
+
+    <div class="container-fluid">
+        <form id="formulario" action="#">
+            <div class="form-row">
+                <div class="col-md-6 mt-2 text-center">
+                    <div id="btng" class="btn-group btn-group-toggle">
+                      <input id="numero" class="form-control" name="numero" type="number" placeholder="Your bet" pattern="[0-9]" min="1" max="999999">
+                      <button id="bet1" type="button" class="btn btn-outline-light">+500</button>
+                      <button id="bet2" type="button" class="btn btn-outline-light">+1k</button>
+                      <button id="bet3" type="button" class="btn btn-outline-light">+2k</button>
+                      <button id="bet4" type="button" class="btn btn-outline-light">+5k</button>
+                      <button id="bet5" type="button" class="btn btn-outline-light">+10k</button>
+                    </div>
+                   
+                    <div id="content">
+
+                      <!-- Timer -->
+                      <div class="timer container text-center mt-3">
+                          <label id="seconds" for=""></label>
+                      </div>
+
+                      <!-- Color List -->
+                      <div id="list" class="text-center">
+                          <h1></h1>
+                      </div>
+
+                      <!-- Try again -->
+                      <div id="try" class="mt-5 text-center">
+                          
+                      </div>
+
+                      <!-- Color Sortea2 -->
+                      <div id="sorteado" class="mt-5 col-md-12 text-center">
+
+                      </div>
+
+                      <!-- Win -->
+                      <div id="numberwin" class="mt-5 text-center">
+                          <label id="win" for=""></label>
+                      </div>
+
+                    </div><!-- /content -->
+
+                </div><!-- /col-md-6 mt-2 text-center -->
+                
+                <!-- Roulette -->
+                <div id="roulette" class="form-row">
+                    <div class="col-md-3">
+
+                        <!-- Canvas -->
+                        <canvas id="canvas" height="400" width="400"></canvas>
+
+                    </div>
+                  
+                </div>
+            </div><!-- /form-row -->
+
+          <!-- Buttons -->
+            <div class="btn-group btn-group-toggle container-fluid mt-3" data-toggle="buttons">
+                <label class="btn btn-outline-dark btn mr-2">
+                    <!-- btn-Black -->
+                    <button id="black" class="btn btn-outline-dark apuestaBtn">2x</button>
+                </label>
+                <label class="btn btn-outline-danger mr-1">
+                    <!-- btn-Red -->
+                    <button id="red" class="btn btn-outline-danger apuestaBtn">3x</button>
+                </label>
+                <label class="btn btn-outline-primary ml-1">
+                    <!-- btn-Blue -->
+                    <button id="blue" class="btn btn-outline-primary apuestaBtn">5x</button>
+                </label>
+                <label class="btn btn-outline-warning ml-2">
+                    <!-- btn-Yellow -->
+                    <button id="yellow" class="btn btn-outline-warning apuestaBtn">50x</button>
+                </label>
+            </div><!-- /btn-group -->
+            
+
+          <!-- Your-Bet -->
+
+            <div id="yourbet" class="mt-3 form-row container-fluid text-center">
+              <div class="col-3">
+                <div id="ap1" role="alert">
+
+                </div>
+              </div>
+              <div class="col-3">
+                <div id="ap2" role="alert">
+
+                </div>
+              </div>
+              <div class="col-3">
+                <div id="ap3" role="alert">
+
+                </div>
+              </div>
+              <div class="col-3">
+                <div id="ap4" role="alert">
+
+                </div>
+              </div>
+            </div><!-- /yourbet -->
+        </form><!-- /form -->
+    </div><!-- /container-fluid -->
+    
+  <script src="js/TweenMax.min.js"></script>
+  <script src="js/Winwheel.min.js"></script>
+  <script src="js/app.min.js" type="text/javascript"></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
+
+</body>
+</html>
